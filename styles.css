@@ -114,11 +114,9 @@ a:focus {
     background-color: #0000002d;
 }
 
-/* .site-box img {
-    width: 190px;
-    opacity: 0.8;
-    border-radius: 2px;
-} */
+.site-box:focus {
+    outline: none;
+}
 
 .site-box h2 {
     font-size: 0.8em
@@ -183,4 +181,11 @@ li {
     body {
         background-size: 190%;
     }
+    .site-box {
+        margin: 50px 20px;
+    }
+  }
+
+  @media only screen and (max-width: 300px) {
+
   }

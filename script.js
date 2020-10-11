@@ -49,7 +49,7 @@ function showPassion() {
     sitesContainer.style.opacity = "0"
     setTimeout(()=>{
         sitesContainer.style.display = "none"
-    }, 1000)
+    }, 1500)
     //farger
     passionBtn.style.color = "rgb(255, 255, 255)"
     portfolioBtn.style.color = "rgba(238, 238, 238, 0.900)"
@@ -67,7 +67,7 @@ function showPortfolio() {
     sitesContainer.style.opacity = "0"
     setTimeout(()=>{
         sitesContainer.style.opacity = "1"
-    }, 1000)
+    }, 10)
     //farger
     portfolioBtn.style.color = "rgb(255, 255, 255)"
     passionBtn.style.color = "rgba(238, 238, 238, 0.900)"
@@ -84,7 +84,7 @@ function showContact() {
     sitesContainer.style.opacity = "0"
     setTimeout(()=>{
         sitesContainer.style.display = "none"
-    }, 1000)
+    }, 1500)
     //farger
     contactBtn.style.color = "rgba(255, 255, 255)"
     portfolioBtn.style.color = "rgba(238, 238, 238, 0.900)"

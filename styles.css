@@ -49,7 +49,7 @@ a {
     justify-content: center;
     max-width: 900px;
     margin: 0 auto;
-    transition: 1s ease-in-out;
+    transition: 1.5s ease-in-out;
     opacity: 1;
 }
 

@@ -30,7 +30,7 @@ h2 {
 
 a {
     text-decoration: none;
-    outline-style: none;
+    outline: none;
 }
 
 #passion-btn {

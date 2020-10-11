@@ -20,7 +20,7 @@ body {
 h1, h2, p, li {
     text-align: center;
     font-family: 'raleway', sans-serif;
-    color: rgba(238, 238, 238, 0.912);
+    color: rgba(238, 238, 238, 0.900);
 }
 
 h2 {
@@ -49,6 +49,8 @@ a {
     justify-content: center;
     max-width: 900px;
     margin: 0 auto;
+    transition: 1s ease-in-out;
+    opacity: 1;
 }
 
 .site-box {
@@ -96,18 +98,22 @@ header {
 #navbar a {
     margin: 15px;
     letter-spacing: 7px;
-    transition: 0.2s ease-in-out;
+    transition: 1s ease-in-out;
+    width: 240px;
 }
 
 #navbar a:hover {
     cursor: pointer;
-    color: rgb(255, 255, 255);
+}
 
+#navbar li:hover {
+    color: white;
 }
 
 li {
     list-style: none;
-    display: inline;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 @media only screen and (max-width: 839px) {

@@ -1,4 +1,7 @@
 const sitesContainer = document.getElementById("all-sites-container")
+const passionBtn = document.getElementById("passion-btn")
+const portfolioBtn = document.getElementById("portfolio-btn")
+const contactBtn = document.getElementById("contact-btn")
 
 const sites = [
     {
@@ -41,3 +44,59 @@ for (i = 0; i < sites.length; i++) {
     </div></a>
     `
 }
+
+function showPassion() {
+    sitesContainer.style.opacity = "0"
+    setTimeout(()=>{
+        sitesContainer.style.display = "none"
+    }, 1000)
+    //farger
+    passionBtn.style.color = "rgb(255, 255, 255)"
+    portfolioBtn.style.color = "rgba(238, 238, 238, 0.900)"
+    contactBtn.style.color = "rgba(238, 238, 238, 0.900)"
+    //størrelser
+    passionBtn.style.fontSize = "2em"
+    setTimeout(()=>{
+        portfolioBtn.style.fontSize = "0.7em"
+        contactBtn.style.fontSize = "0.7em"
+    }, 1000)
+}
+
+function showPortfolio() {
+    sitesContainer.style.display = "flex"
+    sitesContainer.style.opacity = "0"
+    setTimeout(()=>{
+        sitesContainer.style.opacity = "1"
+    }, 1000)
+    //farger
+    portfolioBtn.style.color = "rgb(255, 255, 255)"
+    passionBtn.style.color = "rgba(238, 238, 238, 0.900)"
+    contactBtn.style.color = "rgba(238, 238, 238, 0.900)"
+    //størrelser
+    portfolioBtn.style.fontSize = "2em"
+    setTimeout(()=>{
+        passionBtn.style.fontSize = "0.7em"
+        contactBtn.style.fontSize = "0.7em"
+    }, 1000)
+}
+
+function showContact() {
+    sitesContainer.style.opacity = "0"
+    setTimeout(()=>{
+        sitesContainer.style.display = "none"
+    }, 1000)
+    //farger
+    contactBtn.style.color = "rgba(255, 255, 255)"
+    portfolioBtn.style.color = "rgba(238, 238, 238, 0.900)"
+    passionBtn.style.color = "rgba(238, 238, 238, 0.900)"
+    //størrelser
+    contactBtn.style.fontSize = "2em"
+    setTimeout(()=>{
+        passionBtn.style.fontSize = "0.7em"
+        portfolioBtn.style.fontSize = "0.7em"
+    },1000)
+}
+
+passionBtn.addEventListener("click", showPassion)
+portfolioBtn.addEventListener("click", showPortfolio)
+contactBtn.addEventListener("click", showContact)

@@ -1,4 +1,6 @@
 const sitesContainer = document.getElementById("all-sites-container")
+const passionContainer = document.getElementById("passion-container")
+const contactContainer = document.getElementById("contact-container")
 const passionBtn = document.getElementById("passion-btn")
 const portfolioBtn = document.getElementById("portfolio-btn")
 const contactBtn = document.getElementById("contact-btn")
@@ -45,16 +47,34 @@ for (i = 0; i < sites.length; i++) {
     `
 }
 
-function showPassion() {
-    sitesContainer.style.opacity = "0"
+function show(section) {
     setTimeout(()=>{
-        sitesContainer.style.display = "none"
+        section.style.display = "flex"
+        section.style.opacity = "0"
     }, 1500)
+        setTimeout(()=>{
+        section.style.opacity = "1"
+    }, 1600)
+}
+
+function hide(section) {
+    section.style.opacity = "0"
+    setTimeout(()=>{
+        section.style.display = "none"
+    }, 1500)
+}
+
+function navigateToPassion() {
+    show(passionContainer)
+    hide(contactContainer)
+    hide(sitesContainer)
+
     //farger
     passionBtn.style.color = "rgb(255, 255, 255)"
     portfolioBtn.style.color = "rgba(238, 238, 238, 0.900)"
     contactBtn.style.color = "rgba(238, 238, 238, 0.900)"
-    //størrelser
+
+    //størrelser navbar
     passionBtn.style.fontSize = "2em"
     setTimeout(()=>{
         portfolioBtn.style.fontSize = "0.7em"
@@ -62,17 +82,17 @@ function showPassion() {
     }, 1000)
 }
 
-function showPortfolio() {
-    sitesContainer.style.display = "flex"
-    sitesContainer.style.opacity = "0"
-    setTimeout(()=>{
-        sitesContainer.style.opacity = "1"
-    }, 10)
+function navigateToPortfolio() {
+    hide(passionContainer)
+    hide(contactContainer)
+    show(sitesContainer)
+
     //farger
     portfolioBtn.style.color = "rgb(255, 255, 255)"
     passionBtn.style.color = "rgba(238, 238, 238, 0.900)"
     contactBtn.style.color = "rgba(238, 238, 238, 0.900)"
-    //størrelser
+
+    //størrelser navbar
     portfolioBtn.style.fontSize = "2em"
     setTimeout(()=>{
         passionBtn.style.fontSize = "0.7em"
@@ -80,16 +100,17 @@ function showPortfolio() {
     }, 1000)
 }
 
-function showContact() {
-    sitesContainer.style.opacity = "0"
-    setTimeout(()=>{
-        sitesContainer.style.display = "none"
-    }, 1500)
+function navigateToContact() {
+    hide(passionContainer)
+    show(contactContainer)
+    hide(sitesContainer)
+
     //farger
     contactBtn.style.color = "rgba(255, 255, 255)"
     portfolioBtn.style.color = "rgba(238, 238, 238, 0.900)"
     passionBtn.style.color = "rgba(238, 238, 238, 0.900)"
-    //størrelser
+    
+    //størrelser navbar
     contactBtn.style.fontSize = "2em"
     setTimeout(()=>{
         passionBtn.style.fontSize = "0.7em"
@@ -97,6 +118,6 @@ function showContact() {
     },1000)
 }
 
-passionBtn.addEventListener("click", showPassion)
-portfolioBtn.addEventListener("click", showPortfolio)
-contactBtn.addEventListener("click", showContact)
+passionBtn.addEventListener("click", navigateToPassion)
+portfolioBtn.addEventListener("click", navigateToPortfolio)
+contactBtn.addEventListener("click", navigateToContact)

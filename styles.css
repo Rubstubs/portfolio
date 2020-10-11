@@ -95,7 +95,8 @@ a:focus {
     height: 100px;
     /* background-color: #5b948988; */
     /* background-color: #5b948913; */
-    border: 1px solid rgba(0, 0, 0, 0.39);
+    background-color: #00000012;
+    border: 1px solid  #00000013;
     border-radius: 2px;
     text-align: center;
     color: black;

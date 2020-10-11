@@ -115,7 +115,9 @@ a:focus {
     background-color: #0000002d;
 }
 
-.site-box:focus {
+.site-box:focus, a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
     outline: none;
 }
 

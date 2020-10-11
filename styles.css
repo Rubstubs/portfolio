@@ -51,7 +51,8 @@ a {
     transition: 1.5s ease-in-out;
     letter-spacing: 1px;
     line-height: 4em;
-    padding: 0px 50px
+    padding: 0px 30px;
+    text-align: justify;
 }
 
 #contact-container {
@@ -60,7 +61,6 @@ a {
     justify-content: center;
     transition: 1.5s ease-in-out;
     letter-spacing: 1px;
-    line-height: 2em;
 }
 
 #all-sites-container {

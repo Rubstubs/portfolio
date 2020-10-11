@@ -3,14 +3,18 @@
     -moz-user-select: none;
     -webkit-user-drag: none;
     -webkit-user-select: none;
-    /* border: 1px solid blue; */
+}
+
+#contact-container p {
+    user-select: text;
+    -moz-user-select: text;
+    -webkit-user-select: text;
 }
 
 html, body {
     height: auto;
     margin: 0px;
     min-width: 600px;
-    /* overflow: hidden; */
 }
 
 body {
@@ -18,7 +22,7 @@ body {
     background-size: 105%;
 }
 
-h1, h2, p, li, div {
+h1, h2, p, div {
     text-align: center;
     font-family: 'raleway', sans-serif;
     color: rgba(238, 238, 238, 0.900);
@@ -30,7 +34,7 @@ h2 {
 
 a {
     text-decoration: none;
-    outline: none;
+    /* outline: none; */
 }
 
 a:focus {
@@ -51,14 +55,14 @@ a:focus {
 
 #passion-container {
     position: relative;
-    top: 50px;
+    top: 10px;
     display: none;
     opacity: 0;
     justify-content: center;
     transition: 0.75s ease-in-out;
     letter-spacing: 1px;
     line-height: 1.5em;
-    padding: 0px 30px;
+    padding: 0px 20%;
     text-align: justify;
     font-size: 0.9
 }
@@ -93,25 +97,16 @@ a:focus {
     position: relative;
     width: 150px;
     height: 100px;
-    /* background-color: #5b948988; */
-    /* background-color: #5b948913; */
     background-color: #00000012;
     border: 1px solid  #00000013;
-    border-radius: 2px;
+    border-radius: 4px;
     text-align: center;
     color: black;
     transition: 0.8s ease-in-out;
-    /* -webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);
-    box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75); */
 }
 
 .site-box:hover {
     transform: scale(1.05);
-    /* -webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
-    box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75); */
-    /* background-color: #0000002d; */
     background-color: #5b948986;
 }
 
@@ -138,7 +133,7 @@ header {
 
 green {
     color: #5b9489;
-    font-size: 1.2em;
+    font-size: 1.15em;
 }
 
 #navbar {

@@ -5,6 +5,9 @@ const passionBtn = document.getElementById("passion-btn")
 const portfolioBtn = document.getElementById("portfolio-btn")
 const contactBtn = document.getElementById("contact-btn")
 
+const grey = "rgba(238, 238, 238, 0.900)"
+const white = "rgba(255, 255, 255)"
+
 const sites = [
     {
         title: "Magic: The Gathering - Color Quiz",
@@ -70,9 +73,9 @@ function navigateToPassion() {
     hide(sitesContainer)
 
     //farger
-    passionBtn.style.color = "rgb(255, 255, 255)"
-    portfolioBtn.style.color = "rgba(238, 238, 238, 0.900)"
-    contactBtn.style.color = "rgba(238, 238, 238, 0.900)"
+    passionBtn.style.color = white
+    portfolioBtn.style.color = grey
+    contactBtn.style.color = grey
 
     //størrelser navbar
     passionBtn.style.fontSize = "2em"
@@ -86,9 +89,9 @@ function navigateToPortfolio() {
     show(sitesContainer)
 
     //farger
-    portfolioBtn.style.color = "rgb(255, 255, 255)"
-    passionBtn.style.color = "rgba(238, 238, 238, 0.900)"
-    contactBtn.style.color = "rgba(238, 238, 238, 0.900)"
+    portfolioBtn.style.color = white
+    passionBtn.style.color = grey
+    contactBtn.style.color = grey
 
     //størrelser navbar
     portfolioBtn.style.fontSize = "2em"
@@ -102,9 +105,9 @@ function navigateToContact() {
     hide(sitesContainer)
 
     //farger
-    contactBtn.style.color = "rgba(255, 255, 255)"
-    portfolioBtn.style.color = "rgba(238, 238, 238, 0.900)"
-    passionBtn.style.color = "rgba(238, 238, 238, 0.900)"
+    contactBtn.style.color = white
+    portfolioBtn.style.color = grey
+    passionBtn.style.color = grey
     
     //størrelser navbar
     contactBtn.style.fontSize = "2em"

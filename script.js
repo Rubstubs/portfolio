@@ -51,17 +51,17 @@ function show(section) {
     setTimeout(()=>{
         section.style.display = "flex"
         section.style.opacity = "0"
-    }, 1500)
+    }, 760)
         setTimeout(()=>{
         section.style.opacity = "1"
-    }, 1600)
+    }, 770)
 }
 
 function hide(section) {
     section.style.opacity = "0"
     setTimeout(()=>{
         section.style.display = "none"
-    }, 1500)
+    }, 750)
 }
 
 function navigateToPassion() {
@@ -76,10 +76,8 @@ function navigateToPassion() {
 
     //størrelser navbar
     passionBtn.style.fontSize = "2em"
-    setTimeout(()=>{
-        portfolioBtn.style.fontSize = "0.7em"
-        contactBtn.style.fontSize = "0.7em"
-    }, 1000)
+    portfolioBtn.style.fontSize = "0.7em"
+    contactBtn.style.fontSize = "0.7em"
 }
 
 function navigateToPortfolio() {
@@ -94,10 +92,8 @@ function navigateToPortfolio() {
 
     //størrelser navbar
     portfolioBtn.style.fontSize = "2em"
-    setTimeout(()=>{
-        passionBtn.style.fontSize = "0.7em"
-        contactBtn.style.fontSize = "0.7em"
-    }, 1000)
+    passionBtn.style.fontSize = "0.7em"
+    contactBtn.style.fontSize = "0.7em"
 }
 
 function navigateToContact() {
@@ -112,10 +108,8 @@ function navigateToContact() {
     
     //størrelser navbar
     contactBtn.style.fontSize = "2em"
-    setTimeout(()=>{
-        passionBtn.style.fontSize = "0.7em"
-        portfolioBtn.style.fontSize = "0.7em"
-    },1000)
+    passionBtn.style.fontSize = "0.7em"
+    portfolioBtn.style.fontSize = "0.7em"
 }
 
 passionBtn.addEventListener("click", navigateToPassion)

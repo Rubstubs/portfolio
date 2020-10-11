@@ -18,7 +18,7 @@ body {
     background-size: 105%;
 }
 
-h1, h2, p, li {
+h1, h2, p, li, div {
     text-align: center;
     font-family: 'raleway', sans-serif;
     color: rgba(238, 238, 238, 0.900);
@@ -55,7 +55,7 @@ a:focus {
     display: none;
     opacity: 0;
     justify-content: center;
-    transition: 1.5s ease-in-out;
+    transition: 0.75s ease-in-out;
     letter-spacing: 1px;
     line-height: 1.5em;
     padding: 0px 30px;
@@ -69,7 +69,7 @@ a:focus {
     display: none;
     opacity: 0;
     justify-content: center;
-    transition: 1.5s ease-in-out;
+    transition: 0.75s ease-in-out;
     letter-spacing: 1px;
 }
 
@@ -79,7 +79,7 @@ a:focus {
     justify-content: center;
     max-width: 900px;
     margin: 0 auto;
-    transition: 1.5s ease-in-out;
+    transition: 0.75s ease-in-out;
     opacity: 1;
 }
 
@@ -107,12 +107,12 @@ a:focus {
 }
 
 .site-box:hover {
-    /* transform: scale(1.05); */
+    transform: scale(1.05);
     /* -webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
     box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75); */
-    /* background-color: #5b9489c9; */
-    background-color: #0000002d;
+    /* background-color: #0000002d; */
+    background-color: #5b948986;
 }
 
 .site-box:focus, a {
@@ -136,34 +136,76 @@ header {
     text-align: center;
 }
 
+green {
+    color: #5b9489;
+    font-size: 1.2em;
+}
+
 #navbar {
     position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     text-align: center;
     margin: 50px 0px 30px;
     padding: 0px;
 }
 
-#navbar a {
+.nav-item {
+    width: 300px;
+    height: 50px;
+}
+
+.passion {
+    text-align: right;
+}
+
+.contact {
+    text-align: left;
+    width: 300px
+}
+
+.portfolio {
+    text-align: center;
+}
+
+/* #navbar a {
     margin: 15px;
     letter-spacing: 7px;
     transition: 1s ease-in-out;
     width: 240px;
-}
+} */
 
 #navbar a:hover {
     cursor: pointer;
     letter-spacing: 8px;
 }
 
-#navbar li:hover {
+.nav-item:hover {
     color: white;
 }
+/* test */
 
-li {
-    list-style: none;
-    display: inline-block;
+.nav-item:hover {
+    cursor: pointer;
+    letter-spacing: 8px;
+}
+
+.nav-item {
+    margin: 15px;
+    letter-spacing: 7px;
+    transition: 1.5s ease-in-out;
+    /* width: 240px; */
+    line-height: 50px;
+}
+
+#navbar {
     vertical-align: middle;
 }
+
+/* test slutt */
 
 @media only screen and (max-width: 839px) {
     body {
@@ -175,11 +217,17 @@ li {
         margin-top: 40px;
         margin-bottom: 40px;
     }
-    li {
-        display: block;
+    #navbar {
+        flex-direction: column;
+        flex-wrap: none;
         margin: 20px
     }
+    .nav-item {
+        text-align: center;
+        margin: 20px;
+    }
   }
+
 
   @media only screen and (max-width: 500px) {
     body {

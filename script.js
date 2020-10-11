@@ -3,7 +3,7 @@ const sitesContainer = document.getElementById("all-sites-container")
 const sites = [
     {
         title: "Magic: The Gathering - Color Quiz",
-        description: "Test your knowledge of color combination names from the world of Magic: The Gathering",
+        description: "Quiz yourself on the colors of Magic: The Gathering",
         url: "https://mtg-color-quiz.netlify.app",
         boxImage: "images/color-quiz-img.png"
     },
@@ -15,7 +15,7 @@ const sites = [
     },
     {
         title: "Tøyenhagen Magiske Ekstravagansa",
-        description: "A site containing info about a Magic: The Gathering tournament I host for my friends occasionally",
+        description: "A Magic: The Gathering tournament I host for my friends occasionally",
         url: "https://toyenhagen-magiske.netlify.app",
         boxImage: "images/tme.png"
     },

@@ -33,6 +33,10 @@ a {
     outline: none;
 }
 
+a:focus {
+    outline: none;
+}
+
 #passion-btn {
     font-size: 0.7em;
 }

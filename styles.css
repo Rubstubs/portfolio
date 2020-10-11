@@ -51,14 +51,11 @@ a {
     transition: 1.5s ease-in-out;
     letter-spacing: 1px;
     line-height: 4em;
+    padding: 0px 50px
 }
 
 #contact-container {
     display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     opacity: 0;
     justify-content: center;
     transition: 1.5s ease-in-out;

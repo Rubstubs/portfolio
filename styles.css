@@ -152,6 +152,7 @@ header {
 
 #navbar a:hover {
     cursor: pointer;
+    letter-spacing: 8px;
 }
 
 #navbar li:hover {

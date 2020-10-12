@@ -43,10 +43,10 @@ const sites = [
 
 for (i = 0; i < sites.length; i++) {
     sitesContainer.innerHTML += `
-    <a href="${sites[i].url}" target="_blank"><div class="site-box">
+    <div class="site-box"><a href="${sites[i].url}" target="_blank">
     <h2>${sites[i].title}</h2>
     <p>${sites[i].description}</p>
-    </div></a>
+    </a></div>
     `
 }
 

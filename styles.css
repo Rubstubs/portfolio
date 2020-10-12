@@ -3,6 +3,7 @@
     -moz-user-select: none;
     -webkit-user-drag: none;
     -webkit-user-select: none;
+    outline: none;
 }
 
 #contact-container p {
@@ -34,7 +35,7 @@ h2 {
 
 a {
     text-decoration: none;
-    /* outline: none; */
+    outline: none;
 }
 
 a:focus {
@@ -153,6 +154,10 @@ green {
     height: 50px;
 }
 
+.nav-item a {
+    width: 100%;
+}
+
 .passion {
     text-align: right;
 }
@@ -166,13 +171,6 @@ green {
     text-align: center;
 }
 
-/* #navbar a {
-    margin: 15px;
-    letter-spacing: 7px;
-    transition: 1s ease-in-out;
-    width: 240px;
-} */
-
 #navbar a:hover {
     cursor: pointer;
     letter-spacing: 8px;
@@ -181,7 +179,6 @@ green {
 .nav-item:hover {
     color: white;
 }
-/* test */
 
 .nav-item:hover {
     cursor: pointer;
@@ -192,7 +189,6 @@ green {
     margin: 15px;
     letter-spacing: 7px;
     transition: 1.5s ease-in-out;
-    /* width: 240px; */
     line-height: 50px;
 }
 
@@ -200,7 +196,20 @@ green {
     vertical-align: middle;
 }
 
-/* test slutt */
+.site-box {
+    padding: 0px;
+    width: 190px;
+    height: 130px;
+}
+
+.site-box h2 {
+    margin-top: 0px;
+}
+
+.site-box a {
+    padding: 23px 20px;
+}
+
 
 @media only screen and (max-width: 839px) {
     body {

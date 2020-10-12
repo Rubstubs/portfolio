@@ -18,7 +18,7 @@ const sites = [
     {
         title: "Ruben: The Card Finder",
         description: "Search engine for Magic: The Gathering cards",
-        url: "https:/ruben-card-finder.netlify.app",
+        url: "https://ruben-card-finder.netlify.app",
         boxImage: "images/card-finder.png"
     },
     {

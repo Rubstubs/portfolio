@@ -210,7 +210,6 @@ green {
     padding: 23px 20px;
 }
 
-
 @media only screen and (max-width: 839px) {
     body {
         background-size: 160%;
@@ -232,7 +231,6 @@ green {
     }
   }
 
-
   @media only screen and (max-width: 500px) {
     body {
         background-size: 190%;
@@ -240,8 +238,4 @@ green {
     .site-box {
         margin: 50px 20px;
     }
-  }
-
-  @media only screen and (max-width: 300px) {
-
   }

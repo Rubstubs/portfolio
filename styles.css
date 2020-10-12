@@ -200,6 +200,7 @@ green {
     padding: 0px;
     width: 190px;
     height: 130px;
+    position: relative;
 }
 
 .site-box h2 {

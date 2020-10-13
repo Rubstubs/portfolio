@@ -224,11 +224,14 @@ green {
     #navbar {
         flex-direction: column;
         flex-wrap: none;
-        margin: 20px
+        margin: 20px;
     }
     .nav-item {
         text-align: center;
         margin: 20px;
+    }
+    .site-box {
+        margin: 40px 20px;
     }
   }
 
@@ -237,7 +240,7 @@ green {
         background-size: 190%;
     }
     .site-box {
-        margin: 50px 20px;
+        margin: 40px 10px;
     }
   }
 

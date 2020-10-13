@@ -27,12 +27,12 @@ const sites = [
         url: "https://toyenhagen-magiske.netlify.app",
         boxImage: "images/tme.png"
     },
-    {
-        title: "Kunstus Gallerija",
-        description: "A very small digital art gallery",
-        url: "https://kunstus-gallerija.netlify.app",
-        boxImage: "images/kunstus-gallerija.png"
-    },
+    // {
+    //     title: "Kunstus Gallerija",
+    //     description: "A very small digital art gallery",
+    //     url: "https://kunstus-gallerija.netlify.app",
+    //     boxImage: "images/kunstus-gallerija.png"
+    // },
     {
         title: "HeroQuest Character Tracker",
         description: "Have everything under control while playing HeroQuest with this utility",

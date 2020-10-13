@@ -82,7 +82,7 @@ a:focus {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
     transition: 0.75s ease-in-out;
     opacity: 1;

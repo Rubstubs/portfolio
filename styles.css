@@ -15,7 +15,6 @@
 html, body {
     height: auto;
     margin: 0px;
-    /* min-width: 600px; */
 }
 
 body {
@@ -56,6 +55,8 @@ a:focus {
 
 #passion-container {
     position: relative;
+    max-width: 800px;
+    margin: auto auto;
     top: 10px;
     display: none;
     opacity: 0;
@@ -81,10 +82,10 @@ a:focus {
 #all-sites-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    max-width: 800px;
-    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
     transition: 0.75s ease-in-out;
+    margin: 0 200px;
     opacity: 1;
 }
 
@@ -232,6 +233,10 @@ green {
     }
     .site-box {
         margin: 40px 20px;
+    }
+    #all-sites-container {
+        max-width: 600px;
+        margin: 0 auto;
     }
   }
 

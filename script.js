@@ -27,6 +27,12 @@ const sites = [
         url: "https://toyenhagen-magiske.netlify.app",
         boxImage: "images/tme.png"
     },
+    {
+        title: "City Bike Space View",
+        description: "A graphical representation of Oslo City Bike stations status",
+        url: "https://city-bike-space-view.netlify.app/",
+        boxImage: ""
+    },
     // {
     //     title: "Kunstus Gallerija",
     //     description: "A very small digital art gallery",

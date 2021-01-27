@@ -66,7 +66,8 @@ a:focus {
     line-height: 1.5em;
     padding: 0px 20%;
     text-align: justify;
-    /* font-size: 0.9em */
+    align-content: center;
+    flex-flow: column;
 }
 
 #contact-container {
@@ -77,16 +78,18 @@ a:focus {
     justify-content: center;
     transition: 0.75s ease-in-out;
     letter-spacing: 1px;
+    flex-flow: column;
 }
 
 #all-sites-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-content: center;
     transition: 0.75s ease-in-out;
     margin: 0 200px;
     opacity: 1;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .site-box {
@@ -220,6 +223,13 @@ header {
     padding: 23px 20px;
 }
 
+#portrait {
+    height: 200px;
+    object-fit: contain;
+    margin: 40px;
+    border-radius: 100px;
+}
+
 @media only screen and (max-width: 839px) {
     body {
         background-size: 160%;
@@ -241,18 +251,21 @@ header {
     .site-box {
         margin: 40px 20px;
     }
-    #all-sites-container {
-        max-width: 600px;
-        margin: 0 auto;
-    }
-  }
 
-  @media only screen and (max-width: 500px) {
+    #all-sites-container {
+        margin: 0 10%;
+    }
+}
+
+  @media only screen and (max-width: 550px) {
     body {
         background-size: 190%;
     }
     .site-box {
         margin: 40px 10px;
+    }
+    #all-sites-container {
+        margin: 0 10%;
     }
   }
 
